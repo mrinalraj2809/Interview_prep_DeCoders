@@ -16,6 +16,8 @@ Note: You may assume the string contain only lowercase lette
 class Solution {
 public:
     int firstUniqChar(string s) {
+	ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
         vector<int> hash(26);
         for(int i=0;i<s.length();i++)
         {
