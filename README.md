@@ -1,9 +1,11 @@
 # Cheat Sheet
+--------------------------------------------
 | [Important functions](#important-functions)|
 | [Manipulation Algorithm](#manipulation-algorithm) |
 | [String important functions](#string-important-functions) |
 | [Sets](#sets) |
 | [Maps](#maps) |
+--------------------------------------------
 
 ## Important functions
 ### Sorting
@@ -49,7 +51,7 @@ set_intersection(vec1.begin(),vect1.end(),vec2.begin(),vect2.end(), result.begin
 ### All elements in set
 set_union(vec1.begin(),vect1.end(),vec2.begin(),vect2.end(), result.begin()) : store the all elements in result vector
 
-=============================================
+--------------------------------------------
 
 ## Manipulation Algorithm
 ### Erase
@@ -57,10 +59,10 @@ arr.erase(iteratorPosition) : erases the element at position +1
 arr.erase(unique(arr.begin(),arr.end()), arr.end()) : erases the duplicate elements.
 
 ### Permutation
-next_permutation(arr,arr+n);
-prev_permutation(arr,arr+n);
+1. next_permutation(arr,arr+n);
+2. prev_permutation(arr,arr+n);
 
-=============================================
+--------------------------------------------
 
 ## String important functions
 ### find
@@ -72,7 +74,7 @@ prev_permutation(arr,arr+n);
 3. str.substr(position) : return sub-string from that position to the last.
 4. str.substr(indexPosition, substringLength) : return sub-string from that position to the sub-string length specified.
 
-=============================================
+--------------------------------------------
 
 ## Sets
 set<int,greater<int>> setName; : stores element in descending order.
@@ -91,7 +93,7 @@ setName.find(30) : return iterator position else return setName.end()
 ### Count fn to check if element is present or not
 setName.count(element) : // return 1 if present or 0 when not present.
 
-=============================================
+--------------------------------------------
 
 ## Maps
 1. map<int,int> mapName;
