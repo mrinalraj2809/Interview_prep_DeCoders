@@ -1,9 +1,9 @@
 # Cheat Sheet
-[Important functions](#important-functions)
-[Manipulation Algorithm](#manipulation-algorithm)
-[String important functions](#string-important-functions)
-[Sets](#sets)
-[Maps](#maps)
+| [Important functions](#important-functions)|
+| [Manipulation Algorithm](#manipulation-algorithm) |
+| [String important functions](#string-important-functions) |
+| [Sets](#sets) |
+| [Maps](#maps) |
 
 ## Important functions
 ### Sorting
