@@ -12,10 +12,12 @@
 1. sort(arr,arr+n) : quick sort in (nlogn) ascending order.
 2. sort(arr,arr+n,greater<int>()) : sort in descending order.
 3. sort(arr,arr+n, comparable) : sort accordingly.
+```cpp
 	bool comparable(int a, int b)
 	{
 		return a>b;
 	}
+```
 
 ### Reverse
 reverse(arr,arr+n);
