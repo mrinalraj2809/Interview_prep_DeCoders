@@ -31,27 +31,38 @@ Output: 3
 
 /********* Solution CPP *********/
 //Approach 1: Stack Implementation in Linear time
-class StockSpanner {
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
 public:
-    // vector<int> arr;
-    // vector<vector<int>> hash(10001,vector<int>(10001,0));
-    stack<int> day;
-    stack<int> prices;
-    StockSpanner() {
+    vector<int> arr;
+    void InOrder(TreeNode* root)
+    {
+        if(root != NULL ){
         
-    }
-    
-    int next(int price) {
-        
-        int counter =1;
-        while(!prices.empty() && prices.top() <= price)
-        {
-            prices.pop();
-            counter += day.top();
-            day.pop();
+        InOrder(root->left);
+        arr.push_back(root->val);
+        InOrder(root->right);   
         }
-        prices.push(price);
-        day.push(counter);
-        return counter;
+    }
+    int kthSmallest(TreeNode* root, int k) {
+        ios_base::sync_with_stdio(false);
+        cout.tie(0);
+        cin.tie(0);
+        if(root == NULL ){sort(arr.begin(),arr.end());return arr[k-1];}
+        InOrder(root);
+        sort(arr.begin(),arr.end());
+        return arr[k-1];
+              
+        
     }
 };
